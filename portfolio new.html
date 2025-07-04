@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Portfolio - Prajwal Dhamdhere</title>
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(120deg, #f0fdfa 0%, #f9fafb 100%);
+      color: #374151;
+      font-size: 18px;
+    }
+
+    a {
+      color: #047857;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover { color: #065f46; }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e7eb;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #047857;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      font-weight: 600;
+      color: #374151;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      color: #047857;
+      border-bottom: 2px solid #10b981;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #111827;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .about img {
+      max-width: 250px;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .about p {
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills-list li {
+      background: #d1fae5;
+      padding: 0.75rem 1.5rem;
+      border-radius: 1rem;
+      color: #065f46;
+      font-weight: 600;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: #f9fafb;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-title {
+      font-weight: bold;
+      color: #047857;
+      margin-bottom: 0.5rem;
+    }
+
+    .resume-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: linear-gradient(90deg, #10b981 60%, #059669 100%);
+      color: white;
+      font-weight: 600;
+      border-radius: 0.75rem;
+      text-decoration: none;
+      margin: 2rem auto;
+      justify-content: center;
+    }
+
+    .resume-link .material-icons {
+      margin-left: 0.5rem;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact-list li {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .social-link {
+      font-size: 2rem;
+      color: #374151;
+      transition: color 0.3s;
+    }
+
+    .social-link:hover {
+      color: #10b981;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+      background: #f3f4f6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <span class="material-icons">person</span> Prajwal Dhamdhere
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about">
+        <img src="C:\Users\Prajwal\OneDrive\Pictures\WhatsApp Image 2025-02-22 at 18.37.06_d7e1b9a3.jpg" alt="Profile image of Prajwal Dhamdhere">
+        <p>Hello! I'm <strong>Prajwal Dhamdhere</strong>, a second-year B.Tech IT student at MIT ADT University. I’m passionate about web development and love building modern, accessible websites that solve real-world problems.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-list">
+        <li>Web Development</li>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+        <li>UI/UX Design</li>
+        <li>Team Collaboration</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9041caab-a8a3-4eb1-9dd6-627bfe0107d4.png" alt="Smart Cart project screenshot">
+          <div class="project-title">Smart Cart: A Contactless Shopping App</div>
+          <p>Developed a mobile app enabling contactless shopping using QR code scanning, secure digital payments, and real-time cart updates — improving customer convenience and reducing checkout queues.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" style="text-align: center;">
+      <h2 class="section-title">Resume</h2>
+      <a href="C:\Users\Prajwal\Downloads\Resume Prajwal.pdf" class="resume-link" target="_blank" rel="noopener noreferrer">
+        Download My Resume <span class="material-icons">file_download</span>
+      </a>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <ul class="contact-list">
+        <li><span class="material-icons">email</span> <a href="mailto:prajwaldhamdhere11@gmail.com">prajwaldhamdhere11@gmail.com</a></li>
+        <li><span class="material-icons">phone</span> <a href="tel:2311456387">2311456387</a></li>
+      </ul>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/prajwal-dhamdhere-a3991b2a2/" class="social-link" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/prajwaldhdhere50" class="social-link" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Prajwal Dhamdhere. All rights reserved. | <a href="#about">Back to top</a>
+  </footer>
+
+</body>
+</html>
